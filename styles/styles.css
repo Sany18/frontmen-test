@@ -1,16 +1,20 @@
 html {
   font-family: Helvetica Neue, Arial, sans-serif;
-  font-size: 16px;
+  font-size: calc(0.5rem + 0.5vw);
 }
 
 body {
   margin: 0;
 }
 
+/* Section 1 | Hero section */
 #hero-section {
   background: url('../assets/hero-section/bg.jpg') no-repeat top center/calc(100% - 2rem);
   aspect-ratio: 1400/658;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero-section .left-img {
@@ -37,4 +41,13 @@ body {
 #hero-section .right-bg-images img:last-child {
   width: 20%;
   margin-left: 32.5%;
+}
+
+#hero-section .content {
+  width: 80%;
+  text-align: center;
+}
+
+#hero-section .content .logo {
+  width: 20%;
 }
